@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "Personal website built with React.",
+    "details": [
+      "Built with React",
+      "Responsive design",
+      "Hosted on GitHub"
+    ]
+  },
+  {
+    "title": "Budget Tracker",
+    "description": "Django expense tracking application.",
+    "details": [
+      "Django backend",
+      "AWS deployment",
+      "SQLite database"
+    ]
+  }
+]

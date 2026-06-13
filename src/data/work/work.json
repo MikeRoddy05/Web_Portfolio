@@ -1,0 +1,41 @@
+[
+  {
+    "company": "WoodmenLife",
+    "position": "Systems Test Engineer Intern",
+    "location": "Omaha, NE",
+    "dates": "June 2026 - Present",
+    "description": "Assist in testing enterprise software applications and validating system functionality across multiple environments.",
+    "highlights": [
+      "Execute manual and automated test cases for software releases",
+      "Document defects and collaborate with developers on issue resolution",
+      "Participate in software development lifecycle and quality assurance processes",
+      "Gain experience with enterprise-scale systems and testing methodologies"
+    ]
+  },
+  {
+    "company": "Brookestone Village",
+    "position": "Dietary Aide",
+    "location": "Omaha, NE",
+    "dates": "December 2022 - Present",
+    "description": "Provide meal service and support operations in a senior living community while maintaining quality and safety standards.",
+    "highlights": [
+      "Prepared and served meals to residents in a fast-paced environment",
+      "Maintained cleanliness and sanitation standards in accordance with regulations",
+      "Collaborated with kitchen staff to ensure efficient meal delivery",
+      "Developed strong communication, teamwork, and customer service skills"
+    ]
+  },
+  {
+    "company": "University of Nebraska at Omaha",
+    "position": "Computer Science Student",
+    "location": "Omaha, NE",
+    "dates": "2023 - Present",
+    "description": "Pursuing a Bachelor of Science in Computer Science with concentrations in Software Engineering and Artificial Intelligence.",
+    "highlights": [
+      "Developed full-stack applications using React, Django, Java, and Python",
+      "Completed projects involving machine learning, data analytics, and web development",
+      "Collaborated on team-based software engineering projects",
+      "Applied software design principles, algorithms, and database concepts to real-world problems"
+    ]
+  }
+]

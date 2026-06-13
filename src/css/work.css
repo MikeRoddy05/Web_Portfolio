@@ -1,0 +1,55 @@
+.work-container {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-section {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.experience-card {
+    background-color: #242121;
+
+    border: 1px solid #494747;
+    border-radius: 15px;
+
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.3);
+
+    border-color: #666;
+}
+
+.experience-card h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.work-position {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    margin-top: 0;
+}
+
+.work-description {
+    color: #d0d0d0;
+
+    line-height: 1.6;
+}
+
+.work-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+
+    color: #aaa;
+}

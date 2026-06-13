@@ -1,0 +1,52 @@
+.project-card {
+    background-color: #242121;
+    border: 1px solid #494747;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}   
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    align-items: start;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #2a2a2a;
+
+    width: 700px;
+    max-width: 90vw;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #444;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.5);
+}
