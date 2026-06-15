@@ -5,12 +5,53 @@
 
 
   background-color: black;
-  padding: 20px 150px;
+  padding: 20px 60px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.top-bar-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 body {
   background-color: rgba(31, 29, 29, 0.925);
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.go-to-link {
+  display: flex;
+  gap: 40px;
+}
+
+.go-to-link button {
+  cursor: pointer;
+  background: none;
+  font: inherit;
+  color: white;
+  border: none;
+  padding: 0;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.go-to-link button:hover {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.top-bar-actions {
+  display: flex;
+  gap: 15px;
 }
 
 .link {
@@ -40,4 +81,34 @@ h3 {
   padding: 25px;
   margin: 10px;
   border-radius: 15px;
+  scroll-margin-top: 100px;
+}
+
+
+.nav-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+  .top-bar-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .go-to-link {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .top-bar-actions {
+    justify-content: center;
+  }
+
+  .nav-divider {
+    display: none;
+  }
 }

@@ -5,8 +5,9 @@ function ProjectCards({ project, onClick }) {
 
     return (
         <div className="project-card" onClick={onClick}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <h3 className="project-title">{project.title}</h3>
+            <div className="project-divider"></div>
+            <p className="project-description">{project.description}</p>
         </div>
     )
 }

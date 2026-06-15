@@ -9,7 +9,9 @@ function MyProjects() {
 
     return(
         <>
-        <h3>My Projects</h3>
+        <div className='title'>
+            <h3>My Projects</h3>
+        </div>
         <div className="projects-container">
 
             {projects.map((project, index) => (
@@ -27,20 +29,30 @@ function MyProjects() {
                     <div 
                         className='modal-content'
                         onClick={(e) => e.stopPropagation()}>
+
+                        <div className='modal-left'>
                             <h2>{selectedProject.title}</h2>
-                            <ul>
+                            <ul className='project-details'>
                                 {selectedProject.details.map((detail) => (
                                     <li key={detail}>{detail}</li>
                                 ))}
                             </ul>
 
-                            <button
+                            <button 
+                                className='modal-close'
                                 onClick={() => setSelectedProject(null)}>
-                                    Close
-                                </button>
+                                    ×
+                            </button>
+                        </div>
 
-                    </div>
+                        <div className="modal-right">
+                            <img
+                                src={selectedProject.image}
+                                alt={selectedProject.title}
+                            />
+                        </div>
                 </div>
+            </div>
         )}
         </>
     );

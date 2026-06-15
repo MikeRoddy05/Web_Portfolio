@@ -5,7 +5,9 @@ function WorkExperience() {
 
     return(
         <>
-        <h3>My Work Experience</h3>
+        <div className='title'>
+            <h3>My Work Experience</h3>
+        </div>
         <div className="work-container">
             <div className="experience-section">
                 {work.map((work, index) => (

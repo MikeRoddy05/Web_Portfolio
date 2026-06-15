@@ -2,18 +2,39 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 4rem;
     padding-bottom: 40px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.title h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+
 }
 
 .ab-me-text {
     flex: 2;
 }
 
+.ab-me-text p {
+    line-height: 1.6;
+}
+
 .ab-me-photo {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     
 }
 
