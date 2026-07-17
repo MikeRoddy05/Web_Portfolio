@@ -4,6 +4,7 @@ import AbMe from './AbMe';
 import MyProjects from './MyProjects';
 import WorkExperience from './WorkExperience';
 import MyFooter from './MyFooter';
+import resumePdf from './data/resume/Michael_Roddy_Resume.pdf';
 import ContactMe from './ContactMe';
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
         <div className='nav-divider'></div>
 
         <div className='top-bar-actions'>
-          <a href='#resume' className='link'>My Resume</a>
+          <a href={resumePdf} download className='link'>My Resume</a>
           <a href='#contact' onClick={(e) => {
             e.preventDefault();
             setIsContactOpen(true);
