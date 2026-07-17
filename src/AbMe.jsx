@@ -15,7 +15,7 @@ function AbMe() {
                     I am also majoring in Artificial Intelligence.</p>
             </div>
             <div className='ab-me-photo'>
-                <img src={amazingPhoto} alt="Michael Roddy" />
+                <img src={headShot} alt="Michael Roddy" />
             </div>
         </div>
         </>
