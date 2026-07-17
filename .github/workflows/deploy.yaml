@@ -24,6 +24,12 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: Check AWS Region Secret
+        run: |
+          echo "Region length: ${#AWS_REGION}"
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
