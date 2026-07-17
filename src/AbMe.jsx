@@ -1,5 +1,5 @@
 
-import amazingPhoto from './data/about/amazingPhoto.JPG';
+import headShot from './data/about/Roddy_Michael.jpg';
 import './css/about.css';
 function AbMe() {
 

@@ -23,7 +23,7 @@ function ContactMe({ isOpen, onClose }) {
     setStatus('Sending your message...');
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/meroddy05@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/6c36d4212380b39e78eeb0e8e5d63d64', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -40,7 +40,7 @@ function ContactMe({ isOpen, onClose }) {
         throw new Error('Submission failed');
       }
 
-      setStatus('Thanks for reaching out! Your message has been sent successfully.');
+      setStatus('Thanks you! Your message has been sent successfully.');
       setFormData({
         name: '',
         email: '',
