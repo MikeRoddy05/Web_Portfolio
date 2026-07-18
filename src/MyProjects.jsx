@@ -30,27 +30,34 @@ function MyProjects() {
                         className='modal-content'
                         onClick={(e) => e.stopPropagation()}>
 
-                        <div className='modal-left'>
-                            <h2>{selectedProject.title}</h2>
-                            <ul className='project-details'>
-                                {selectedProject.details.map((detail) => (
-                                    <li key={detail}>{detail}</li>
-                                ))}
-                            </ul>
+                        <div className="modal-columns">
+                            <div className='modal-left'>
+                                <h2>{selectedProject.title}</h2>
+                                <ul className='project-details'>
+                                    {selectedProject.details.map((detail) => (
+                                        <li key={detail}>{detail}</li>
+                                    ))}
+                                </ul>
+                            </div>
 
-                            <button 
-                                className='modal-close'
-                                onClick={() => setSelectedProject(null)}>
-                                    ×
-                            </button>
+                            <div className="modal-right">
+                                <img
+                                    src={selectedProject.image}
+                                    alt={selectedProject.title}
+                                />
+                            </div>
                         </div>
 
-                        <div className="modal-right">
-                            <img
-                                src={selectedProject.image}
-                                alt={selectedProject.title}
-                            />
-                        </div>
+                        {selectedProject.link && (
+                            <a className="modal-link-button" href={selectedProject.link} target="_blank" rel="noopener noreferrer">
+                                View Repository
+                            </a>
+                        )}
+                        <button 
+                            className='modal-close'
+                            onClick={() => setSelectedProject(null)}>
+                                ×
+                        </button>
                 </div>
             </div>
         )}

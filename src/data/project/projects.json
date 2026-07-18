@@ -6,7 +6,8 @@
       "Built with React",
       "Responsive design",
       "Hosted on GitHub"
-    ]
+    ],
+    "image": null
   },
   {
     "title": "Budget Tracker",
@@ -15,6 +16,51 @@
       "Django backend",
       "AWS deployment",
       "SQLite database"
-    ]
+    ],
+    "image": null
+  },
+  {
+    "title": "Stock Prediction",
+    "description": "TODO",
+    "details": [
+      "TODO"
+    ],
+    "image": null
+  },
+  {
+    "title": "Resonode",
+    "description": "New Musical Instrument Application",
+    "details": [
+      "TODO"
+    ],
+    "image": null
+  },
+  {
+    "title": "Peer Service Marketplace",
+    "description": "Users can request services from other users",
+    "details": [
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO",
+      "TODO"
+    ],
+    "image": null,
+    "link": "https://github.com/fonseca04Lenin/peer-service-marketplace.git"
   }
 ]

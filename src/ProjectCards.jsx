@@ -2,6 +2,7 @@ import { useState } from "react";
 import './css/projects.css';
 
 function ProjectCards({ project, onClick }) {
+    console.log(project.title, project.link);
 
     return (
         <div className="project-card" onClick={onClick}>

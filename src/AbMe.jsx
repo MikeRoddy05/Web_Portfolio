@@ -9,13 +9,13 @@ function AbMe() {
             <h3>About Me</h3>
         </div>
         <div className='ab-me-content'>
+            <div className='ab-me-photo'>
+                <img src={headShot} alt="Michael Roddy" />
+            </div>
             <div className="ab-me-text">            
                 <p>My name is Michael Roddy and I am a senior at the University of Nebraska at Omaha. 
                     I am studying Computer Science with a concentration in Software Engineering and 
                     I am also majoring in Artificial Intelligence.</p>
-            </div>
-            <div className='ab-me-photo'>
-                <img src={headShot} alt="Michael Roddy" />
             </div>
         </div>
         </>

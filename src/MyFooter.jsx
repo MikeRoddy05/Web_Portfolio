@@ -13,7 +13,7 @@ function MyFooter() {
                 © 2026 Michael Roddy. Built with React
             </p>
 
-            <a href="https://linkedin.com/in/your-profile" target="_blank">
+            <a href="www.linkedin.com/in/michael-roddy-b439082a0" target="_blank">
                 <FaLinkedin />
             </a>
         </div>
