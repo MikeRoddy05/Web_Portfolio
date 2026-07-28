@@ -1,64 +1,73 @@
 [
   {
     "title": "Portfolio Website",
-    "description": "Personal website built with React.",
+    "description": "A personal portfolio site built with React (Vite) featuring interactive project displays and direct recruiter contact.",
     "details": [
-      "Built with React",
-      "Responsive design",
+      "Built a componentized architecture using React (Vite) with reusable UI components",
+      "Implemented interactive project cards and a modal viewer for detailed project views",
+      "Rendered work experience dynamically from JSON-driven content",
+      "Added a one-click resume download for recruiters",
+      "Implemented a secure contact flow using formsubmit.co, enabling direct inbound recruiter contact",
+      "Built fully responsive styling across desktop and mobile",
       "Hosted on GitHub"
     ],
-    "image": null
+    "image": null,
+    "link": "https://github.com/MikeRoddy05/Web_Portfolio.git"
   },
   {
     "title": "Budget Tracker",
-    "description": "Django expense tracking application.",
+    "description": "A Django-based personal finance app for tracking income and expenses.",
     "details": [
-      "Django backend",
-      "AWS deployment",
-      "SQLite database"
+      "Built with Django 5.2, organized into modular apps for budget, income, and expenses",
+      "Modeled recurring and one-time income/expenses using the Django ORM",
+      "Built form-driven CRUD views for adding, editing, and deleting entries",
+      "Used SQLite for local development and persistence",
+      "Prepared production deployment artifacts, including Gunicorn + systemd service units",
+      "Configured nginx site templates for production deployment",
+      "Set up STATIC_ROOT for collecting static assets via Django's collectstatic"
     ],
-    "image": null
+    "image": null,
+    "link": "https://github.com/mroddy05/budgettracker.git"
   },
   {
     "title": "Stock Prediction",
-    "description": "TODO",
+    "description": "A Python tool that uses a recurrent neural network to forecast stock prices.",
     "details": [
-      "TODO"
+      "Built a stacked-LSTM recurrent neural network (2 layers, 100 units each) using Keras/TensorFlow",
+      "Downloaded historical equity price data using yfinance",
+      "Engineered features including moving averages and percent returns",
+      "Normalized 60-day rolling input sequences using scikit-learn's MinMaxScaler",
+      "Trained with the Adam optimizer and mean-squared-error loss, using early stopping to reduce overfitting",
+      "Implemented iterative 7-day forecasting by feeding predictions back into the input sequence",
+      "Visualized predicted vs. actual closing prices with matplotlib"
     ],
-    "image": null
+    "image": null,
+    "link": "https://github.com/MikeRoddy05/Stock_Prediction.git"
   },
   {
     "title": "Resonode",
-    "description": "New Musical Instrument Application",
+    "description": "An interactive music application that generates beats from on-screen clicks, built in Python.",
     "details": [
-      "TODO"
+      "Built in Python with a real-time interactive interface",
+      "Generates beats based on the screen location of user clicks",
+      "Supports looping at a user-selected time interval",
+      "Includes multiple sound presets that can be mixed and matched",
+      "Displays visual effects synced to the beat as it loops"
     ],
     "image": null
   },
   {
     "title": "Peer Service Marketplace",
-    "description": "Users can request services from other users",
+    "description": "A full-stack peer-to-peer marketplace for booking local gig services.",
     "details": [
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO",
-      "TODO"
+      "Built as a team project with a React (Vite) frontend and a Django REST Framework backend",
+      "Enabled users to list, book, and pay for local services (tutoring, handyman, tech help, etc.)",
+      "Implemented in-app messaging between users",
+      "Added a review and ratings system for completed services",
+      "Modularized the backend into REST API apps: bookings, messaging, payments, reviews, services, and users",
+      "Used SQLite for local development",
+      "Prepared an nginx configuration for production deployment",
+      "Documented payment integration planning and architecture"
     ],
     "image": null,
     "link": "https://github.com/fonseca04Lenin/peer-service-marketplace.git"

@@ -136,6 +136,22 @@
 
 .project-details {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.project-details li {
+    padding-left: 6px;
+}
+
+.project-details li::marker {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-close {

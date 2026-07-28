@@ -4,38 +4,38 @@
     "position": "Systems Test Engineer Intern",
     "location": "Omaha, NE",
     "dates": "June 2026 - Present",
-    "description": "Assist in testing enterprise software applications and validating system functionality across multiple environments.",
+    "description": "Automate and maintain test coverage for an enterprise .NET application using Azure DevOps and ParaSoft SOAtest within an Agile team.",
     "highlights": [
-      "Execute manual and automated test cases for software releases",
-      "Document defects and collaborate with developers on issue resolution",
-      "Participate in software development lifecycle and quality assurance processes",
-      "Gain experience with enterprise-scale systems and testing methodologies"
+      "Automated regression and API testing for a .NET phone directory application using ParaSoft SOAtest",
+      "Built automated test results reporting into Azure DevOps Test Plans",
+      "Built a scalable automated test suite with Azure DevOps YAML pipelines that runs on a schedule and grows with the application without breaking existing tests",
+      "Validated endpoint calls, data validation, and search/filtering functionality across the application",
+      "Identified, documented, and helped resolve bug tickets while covering edge cases",
+      "Participated in Agile ceremonies including standups, sprint planning, and retrospectives"
     ]
   },
   {
     "company": "Brookestone Village",
     "position": "Dietary Aide",
     "location": "Omaha, NE",
-    "dates": "December 2022 - Present",
-    "description": "Provide meal service and support operations in a senior living community while maintaining quality and safety standards.",
+    "dates": "June 2021 - Present",
+    "description": "Provide meal service to residents in a senior living community while maintaining food safety and dietary standards.",
     "highlights": [
-      "Prepared and served meals to residents in a fast-paced environment",
-      "Maintained cleanliness and sanitation standards in accordance with regulations",
-      "Collaborated with kitchen staff to ensure efficient meal delivery",
-      "Developed strong communication, teamwork, and customer service skills"
+      "Served each meal to 35+ residents in accordance with established schedules and dietary procedures",
+      "Followed all food safety regulations while preparing and serving meals",
+      "Reported and documented resident changes in consumption or behavior to help maintain safe, individualized diets"
     ]
   },
   {
-    "company": "University of Nebraska at Omaha",
-    "position": "Computer Science Student",
-    "location": "Omaha, NE",
-    "dates": "2023 - Present",
-    "description": "Pursuing a Bachelor of Science in Computer Science with concentrations in Software Engineering and Artificial Intelligence.",
+    "company": "Infinity Precision Ag",
+    "position": "Job Shadow",
+    "location": "",
+    "dates": "",
+    "description": "Shadowed the integration of software platforms with drone technology in an agricultural setting.",
     "highlights": [
-      "Developed full-stack applications using React, Django, Java, and Python",
-      "Completed projects involving machine learning, data analytics, and web development",
-      "Collaborated on team-based software engineering projects",
-      "Applied software design principles, algorithms, and database concepts to real-world problems"
+      "Assisted in integrating software platforms with drone technology",
+      "Gained exposure to applications of computer science in agriculture",
+      "Learned about sensor data collection and how new software solutions impact drone performance and precision"
     ]
   }
 ]
