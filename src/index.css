@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(31, 29, 29, 0.925);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .top-bar-container {
   display: flex;
   justify-content: space-between;
@@ -10,29 +22,34 @@
   top: 0;
   z-index: 1000;
 
-  gap: 16px;
-  flex-wrap: nowrap;
+  row-gap: 12px;
+  column-gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.top-bar-title {
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .top-bar-title h1 {
   margin: 0;
-  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
   font-weight: 700;
   letter-spacing: 1px;
   white-space: nowrap;
-}
-
-body {
-  background-color: rgba(31, 29, 29, 0.925);
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .go-to-link {
   display: flex;
   gap: clamp(16px, 3vw, 40px);
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .go-to-link button {
@@ -57,7 +74,10 @@ body {
 .top-bar-actions {
   display: flex;
   gap: clamp(8px, 1.5vw, 15px);
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .link {
@@ -92,28 +112,40 @@ h3 {
   scroll-margin-top: 100px;
 }
 
-
 .nav-divider {
   width: 1px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
 }
 
-@media (max-width: 900px) {
+/* Below this width: skip straight to the stacked mobile look */
+@media (max-width: 1300px) {
   .top-bar-container {
     flex-direction: column;
-    gap: 12px;
+    row-gap: 12px;
+    column-gap: 0;
     padding: 16px 20px;
   }
 
+  .top-bar-title {
+    flex: none;
+    width: 100%;
+  }
+
   .top-bar-title h1 {
-    font-size: 1.4rem;
+    white-space: normal;
+    text-align: center;
+    overflow: visible;
+    text-overflow: unset;
+    font-size: clamp(1rem, 5vw, 1.4rem);
   }
 
   .go-to-link {
+    flex: none;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px 24px;
+    gap: 10px 18px;
     width: 100%;
   }
 
@@ -122,13 +154,16 @@ h3 {
   }
 
   .top-bar-actions {
+    flex: none;
+    flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
     gap: 10px;
   }
 
   .link {
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
     text-align: center;
     padding: 8px 14px;
     font-size: 0.9rem;
@@ -139,12 +174,21 @@ h3 {
   }
 }
 
-@media (max-width: 420px) {
-  .top-bar-actions {
-    flex-direction: column;
+/* Extra small phones: just scale text down further, same layout */
+@media (max-width: 480px) {
+  .top-bar-container {
+    padding: 14px 16px;
+  }
+
+  .top-bar-title h1 {
+    font-size: clamp(0.95rem, 6vw, 1.15rem);
+  }
+
+  .go-to-link button {
+    font-size: 0.85rem;
   }
 
   .link {
-    width: 100%;
+    font-size: 0.85rem;
   }
 }

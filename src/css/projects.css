@@ -3,16 +3,17 @@
     border: 1px solid #494747;
     border-radius: 15px;
 
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: flex-start;
-    flex-direction: column;
 
     padding: 25px;
-    margin: 15px 0;
     cursor: pointer;
     transition: all 0.3s ease;
 
-    min-height: 250px;
+    height: 100%;
+    box-sizing: border-box;
 }  
 
 .project-card:hover {
@@ -56,13 +57,20 @@
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     gap: 25px;
     padding-bottom: 40px;
 
     max-width: 1000px;
     margin: 0 auto;
 
-    align-items: start;
+    align-items: stretch;
+}
+
+@media (max-width: 640px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .modal-overlay {
@@ -87,6 +95,7 @@
     height: auto;
     min-height: 300px;
     max-width: 90vw;
+    max-height: 85vh;
 
     padding: 30px;
 
@@ -100,16 +109,33 @@
     display: flex;
     flex-direction: column;
 
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
     position: relative;
+}
+
+@media (max-width: 640px) {
+    .modal-content {
+        max-height: 80vh;
+        padding: 20px;
+    }
 }
 
 .modal-columns {
     display: flex;
     gap: 25px;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     margin-top: 30px;
     margin-bottom: auto;
+}
+
+@media (max-width: 640px) {
+    .modal-columns {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .modal-left {

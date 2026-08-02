@@ -1,11 +1,23 @@
 import projects from './data/project/projects.json';
 import ProjectCards from './ProjectCards';
 import './css/projects.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function MyProjects() {
     const [selectedProject, setSelectedProject] = useState(null);
+
+    // Lock background scroll while the modal is open
+    useEffect(() => {
+        if (selectedProject) {
+            const originalOverflow = document.body.style.overflow;
+            document.body.style.overflow = 'hidden';
+
+            return () => {
+                document.body.style.overflow = originalOverflow;
+            };
+        }
+    }, [selectedProject]);
 
     return(
         <>
